@@ -13,3 +13,22 @@ func stringForDeliLine(lineArray: [String]) -> String {
     }
     return deliLine
 }
+
+func addName(name: String, toDeliLine: [String]) -> [String] {
+    var deliLine = toDeliLine
+    deliLine.append(name)
+    let numberInLine = deliLine.count
+    print("Welcome \(name)! Your number in line is \(numberInLine)")
+    return deliLine
+}
+
+func serveNextCustomerInDeliLine(lineArray: [String]) -> [String] {
+    if lineArray.count > 0 {
+        var deliLine = lineArray
+        let nextCustomer = deliLine.removeFirst()
+        print("\(nextCustomer), please step up!")
+        return deliLine
+    } else {
+        return lineArray
+    }
+}

@@ -15,6 +15,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         print(stringForDeliLine(iosAncestors))
         print(stringForDeliLine([]))
+        print(addName("Al", toDeliLine: []))
+        print(addName("Mel", toDeliLine: iosAncestors))
+        print(serveNextCustomerInDeliLine([]))
+        print(serveNextCustomerInDeliLine(iosAncestors))
         
         // Do not alter
         return true  //
